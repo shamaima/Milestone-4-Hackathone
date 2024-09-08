@@ -1,0 +1,75 @@
+
+
+/* Basic Reset to ensure consistent styling across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the main body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    background-color: #e9ecef; /* Light gray background for a soft look */
+    display: flex; /* Centering the content */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Container for the resume */
+.resume-container {
+    background: #ffffff; /* White background for clarity */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+    width: 100%;
+    max-width: 800px; /* Max width to ensure it doesn't stretch too wide */
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #ddd; /* Light border to subtly frame the container */
+}
+
+/* Styling for editable sections */
+.editable {
+    margin-bottom: 30px; /* Increased space between sections for clarity */
+}
+
+.editable h2 {
+    border-bottom: 4px solid #007bff; /* Underline with a bright color for section titles */
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for readability */
+    font-size: 1.6em; /* Larger font for section headers */
+    font-weight: 600; /* Slightly bolder text for emphasis */
+}
+
+/* Styling for the editable content */
+.editable-content {
+    border: 1px solid #007bff; /* Blue border for editable areas */
+    border-radius: 8px; /* More rounded corners for a softer look */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background to make content stand out */
+    min-height: 80px; /* More space for content */
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactive effects */
+}
+
+/* Focus effect to highlight editable areas */
+.editable-content:focus {
+    border-color: #0056b3; /* Darker blue border to indicate focus */
+    background-color: #eaf4ff; /* Slightly different background for focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Subtle shadow to highlight focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 600px) {
+    .resume-container {
+        width: 100%; /* Full width on small screens */
+        padding: 15px; /* Less padding to fit content */
+    }
+
+    .editable-content {
+        padding: 15px; /* Less padding in editable areas */
+    }
+}
